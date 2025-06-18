@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Game Landing Page</title>
+  <style>
+    :root {
+      --bg-color: #0d0d0d;
+      --primary-color: #ff003c;
+      --text-color: #ffffff;
+      --accent-color: #ff4757;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(145deg, #1a1a1a, #000000);
+      padding: 100px 20px;
+      text-align: center;
+      box-shadow: 0 0 30px var(--primary-color);
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      color: var(--primary-color);
+      text-shadow: 0 0 8px var(--primary-color);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--primary-color);
+      display: inline-block;
+      margin-bottom: 20px;
+      text-shadow: 0 0 5px var(--primary-color);
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 12px var(--primary-color);
+      transition: background 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: var(--accent-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #111;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .buttons a {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Your Game Title</h1>
+  <p>An immersive experience like no other — built with passion.</p>
+</header>
+
+<section>
+  <h2>About the Game</h2>
+  <p>
+    This is where you talk about what makes your game special. What kind of game is it? What platforms is it on?
+    Describe the gameplay, the genre, and what kind of player experience you're going for.
+  </p>
+</section>
+
+<section>
+  <h2>Developer Journey</h2>
+  <p>
+    Share your personal story. Why did you make this game? Was it your first project? What challenges did you face?
+    What are you most proud of in the final product?
+  </p>
+</section>
+
+<section>
+  <h2>Download</h2>
+  <p>Get the game on your favorite platform below:</p>
+  <div class="buttons">
+    <a href="#" target="_blank">Download for Windows</a>
+    <a href="#" target="_blank">Download for Mac</a>
+    <a href="#" target="_blank">Play in Browser</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Your Name or Studio — All rights reserved.
+</footer>
+
+</body>
+</html>
