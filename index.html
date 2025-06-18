@@ -1,134 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>They Watch</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Title Here</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg-color: #ffffff;
-      --primary-color: #ff003c;
-      --text-color: #ffffff;
-      --accent-color: #ff4757;
+      --bg-color: #1a1a1a;       /* Slightly lighter black */
+      --text-color: #f0e5b8;     /* Bone yellow */
+      --accent-color: #770000;   /* Deep blood red */
+      --hover-color: #cc0000;    /* Brightened red for hover */
     }
 
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: var(--bg-color);
       color: var(--text-color);
+      font-family: 'Cormorant Garamond', serif;
+      line-height: 1.7;
       overflow-x: hidden;
     }
 
     header {
-      background: linear-gradient(145deg, #1a1a1a, #000000);
-      padding: 100px 20px;
       text-align: center;
-      box-shadow: 0 0 30px var(--primary-color);
+      padding: 60px 20px 40px;
     }
 
     header h1 {
-      font-size: 3.5rem;
-      color: var(--primary-color);
-      text-shadow: 0 0 8px var(--primary-color);
+      font-size: 3em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin: 0;
     }
 
     header p {
-      font-size: 1.2rem;
-      color: #ccc;
-      margin-top: 10px;
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 20px auto 0;
+      color: var(--text-color);
+    }
+
+    .cover {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .cover img {
+      max-width: 90%;
+      height: auto;
+      box-shadow: 0 0 30px rgba(240, 229, 184, 0.3);
+      border: 2px solid var(--text-color);
+      border-radius: 6px;
     }
 
     section {
-      padding: 60px 20px;
       max-width: 900px;
-      margin: 0 auto;
+      margin: auto;
+      padding: 40px 20px;
     }
 
     h2 {
-      font-size: 2rem;
-      color: var(--primary-color);
-      border-bottom: 2px solid var(--primary-color);
-      display: inline-block;
-      margin-bottom: 20px;
-      text-shadow: 0 0 5px var(--primary-color);
+      font-size: 2em;
+      color: var(--text-color);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--accent-color);
+      padding-bottom: 5px;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: var(--text-color);
     }
 
     .buttons {
-      margin-top: 30px;
+      text-align: center;
+      margin: 60px 0;
     }
 
     .buttons a {
-      display: inline-block;
-      background-color: var(--primary-color);
-      color: white;
-      text-decoration: none;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      border: 1px solid var(--text-color);
       padding: 14px 28px;
       margin: 10px;
-      border-radius: 5px;
-      box-shadow: 0 0 12px var(--primary-color);
-      transition: background 0.3s ease;
+      text-decoration: none;
+      font-size: 1em;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px var(--text-color);
+      border-radius: 4px;
+      letter-spacing: 1px;
     }
 
     .buttons a:hover {
-      background-color: var(--accent-color);
+      background-color: var(--text-color);
+      color: var(--bg-color);
+      box-shadow: 0 0 20px var(--text-color);
     }
 
     footer {
       text-align: center;
-      padding: 30px 20px;
-      background-color: #111;
+      font-size: 0.9em;
+      padding: 40px 20px;
       color: #777;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      .buttons a {
-        width: 100%;
-        box-sizing: border-box;
-      }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Your Game Title</h1>
-  <p>An immersive experience like no other — built with passion.</p>
-</header>
+  <header>
+    <h1>Game Title Here</h1>
+    <p>A psychological horror experience that asks the question: what happens when the ones watching... never leave?</p>
+  </header>
 
-<section>
-  <h2>About the Game</h2>
-  <p>
-    This is where you talk about what makes your game special. What kind of game is it? What platforms is it on?
-    Describe the gameplay, the genre, and what kind of player experience you're going for.
-  </p>
-</section>
-
-<section>
-  <h2>Developer Journey</h2>
-  <p>
-    Share your personal story. Why did you make this game? Was it your first project? What challenges did you face?
-    What are you most proud of in the final product?
-  </p>
-</section>
-
-<section>
-  <h2>Download</h2>
-  <p>Get the game on your favorite platform below:</p>
-  <div class="buttons">
-    <a href="#" target="_blank">Download for Windows</a>
-    <a href="#" target="_blank">Download for Mac</a>
-    <a href="#" target="_blank">Play in Browser</a>
+  <div class="cover">
+    <!-- 🎮 Add your game cover image here -->
+    <img src="https://i.imgur.com/W0wE6Vj.png" alt="Game Cover">
   </div>
-</section>
 
-<footer>
-  &copy; 2025 Your Name or Studio — All rights reserved.
-</footer>
+  <section>
+    <h2>The Story</h2>
+    <p>In a world where society is in shambles, not because of a plague, or zombies, or nuclear war, but because of something mostly unseen that plagues civilization... They</p>
+    
+    <div style="margin-top: 40px;">
+        <P> - "Down The Hill I see Them, They Aren't Moving...  Just... Standing There, Like They Know I've Been Here Watching for 6 days"</P>
+    </div>
+  </section>
+
+  <section>
+    <h2>What You’ll Experience</h2>
+    <p>An immersive world where the cosmic horrors could bhe around any and every corner, they know your here, where? They are going to find out...</p>
+  </section>
+
+  <section>
+    <h2>The Watchers</h2>
+    <p>Creatures that stand in groups not moving for days or weeks, they aren't always in their bodies, most of the time they are searching for you, all they care about is finding victims...</p>
+  </section>
+
+  <div class="buttons">
+    <a href="https://discord.gg/uFsrQFv2zM" target="_blank">Join the Discord</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Your Game Studio Name. All rights reserved.
+  </footer>
 
 </body>
 </html>
